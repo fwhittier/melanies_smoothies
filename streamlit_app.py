@@ -15,7 +15,7 @@ st.write('The name on the order will be:', name_on_order)
 
 # session = get_active_session()
 conn = st.connection("snowflake")
-session = conn.get_active_session()
+session = conn.session()
 
 # df = conn.query("SELECT * FROM mytable;", ttl="10m")
 
